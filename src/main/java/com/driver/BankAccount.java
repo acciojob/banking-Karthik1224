@@ -17,7 +17,7 @@ public class BankAccount {
         //Generate account number having given number of 'digits' such that the sum of digits is equal to 'sum'
         //If it is not possible, throw "Account Number can not be generated" exception
         int maxPossibleSum = 9 * digits;
-        if (sum > maxPossibleSum)
+        if (sum <0 || sum > maxPossibleSum)
         {
             throw new Exception("Account Number can not be generated");
         }
